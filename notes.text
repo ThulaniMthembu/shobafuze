@@ -1,0 +1,82 @@
+Project Summary:
+Author: Thulani <Dev-MAjxr /> Mthembu
+Email: thlanim457@gmail.com
+Client: Shopbafuze InterLine Express, bus company.
+
+1. Responsive Navigation Bar
+Hamburger Menu:
+
+Toggle Functionality: Opens and closes the menu with a sliding effect and icon changes between a menu icon and a close icon.
+Close: Clicking outside the menu closes it. On larger screens, the menu remains open, and the hamburger icon is reset.
+Scroll Effect:
+
+Class Toggle: The navigation bar changes appearance based on the scroll position (e.g., adds a scrolled class).
+2. Service Modal
+Open: Triggered by clicking the service button.
+Close:
+"X" Button: Closes the modal.
+Outside Click: Clicking outside the modal content closes it.
+3. Lightbox Gallery
+Open: Displays a larger version of the image when clicked.
+Close:
+Close Button: Hides the lightbox.
+Outside Click: Clicking outside the image hides the lightbox.
+4. Form Handling
+Form Submission:
+
+Submit: Uses Fetch API to send form data to a server endpoint.
+Success: Displays a success message and resets the form.
+Error: Shows error messages or a generic error message.
+Submission Status:
+
+Display: Uses a modal to show the form submission status (success or error).
+Close: Modal can be closed by clicking the "X" button or outside the modal area.
+5. Responsive Design
+Layout Adjustments: Ensures that the navigation menu and other elements are properly displayed on various screen sizes.
+Media Queries: Used to handle different display requirements for small and large screens.
+6. JavaScript Code Overview
+Event Listeners:
+
+Scroll: Handles the appearance of the navigation bar.
+Click: Manages the toggle functionality of the hamburger menu, opening and closing of modals, and handling image clicks for the lightbox.
+Resize: Adjusts the navigation menu display on window resize.
+Functions:
+
+toggleMenu(): Toggles the visibility of the navigation menu and changes the hamburger icon.
+showModal(modal): Displays a modal.
+hideModal(modal): Hides a modal.
+handleScroll(): Adjusts the navigation bar based on the scroll position.
+handleResize(): Adjusts layout based on window size.
+handleSubmit(event): Handles form submission and displays appropriate status messages.
+7. HTML Structure
+Navigation:
+Contains a hamburger menu and a links container.
+Modals:
+Service Modal: For displaying service-related information.
+Submission Modal: For showing form submission results.
+Gallery:
+Displays images in a lightbox when clicked.
+Form:
+Booking form with various fields and submission handling.
+8. CSS Styling
+Responsive Styles: Ensures elements are styled correctly on different screen sizes.
+Animation: Adds sliding effects for the navigation menu and modals.
+Notes for notes.text
+Project Features:
+
+Responsive navigation bar with hamburger menu.
+Service modal and its functionality.
+Lightbox gallery for images.
+Form submission handling with feedback modals.
+Key Functions:
+
+toggleMenu(): Toggles the visibility of the navigation menu.
+showModal(modal): Shows a specified modal.
+hideModal(modal): Hides a specified modal.
+handleScroll(): Manages the navigation bar's appearance based on scroll position.
+handleResize(): Adjusts layout and visibility based on screen size.
+handleSubmit(event): Handles form submission and displays results.
+HTML/CSS/JavaScript Integration:
+
+Ensure HTML elements match the IDs and classes used in the JavaScript code.
+CSS styles should be applied correctly for responsiveness and animations.

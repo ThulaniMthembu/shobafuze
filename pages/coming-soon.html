@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon | Social Media Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="coming-soon-styles.css" />
+  </head>
+  <body>
+    <picture>
+      <source
+        media="(max-width: 780px)"
+        srcset="../images/mobile-background.jpg"
+        loading="lazy"
+      />
+      <video autoplay muted loop id="background-video" preload="metadata">
+        <source src="../video/coming-soon.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </picture>
+
+    <div id="nav-container">
+      <a href="/index.html">
+        <img id="logo" src="/images/logo.png" alt="logo" />
+      </a>
+
+      <div id="links-container" class="menu">
+        <ul>
+          <li><a href="/index.html">home</a></li>
+        </ul>
+      </div>
+      <div id="button-container">
+        <button id="contact-btn" class="buttons">
+          <a class="tags" href="/index.html"
+            >Contact Us<i class="bx bx-right-arrow-alt bx-sm"></i
+          ></a>
+        </button>
+        <button id="hamburger"><i class="bx bx-menu bx-md"></i></button>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="animated-text" hidden>Coming Soon!</h1>
+      <h2>Our social media pages are coming soon... Stay tuned for updates!</h2>
+      <a href="/index.html" class="button">Back to Home</a>
+    </div>
+  </body>
+</html>
