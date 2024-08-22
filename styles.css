@@ -134,7 +134,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	filter: grayscale(80%) blur(10px);
+	filter: grayscale(80%) brightness(60%) blur(10px);
 	z-index: 1;
 }
 
@@ -146,7 +146,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 50px 20px;
+	padding: 20px 20px;
 }
 
 #text-container {
@@ -165,16 +165,16 @@ body {
 }
 
 #text-container h3 {
-	font-size: 2rem;
+	font-size: 1.563rem;
 	font-weight: 500;
 	line-height: 1.6;
 	margin-bottom: 30px;
-	color: var(--secondary-color);
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-	background: linear-gradient(180deg, var(--secondary-color), #008080);
+	color: var(--text-color);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(45deg, var(--secondary-color), #008080);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: #fff;
 	animation: fadeInLeft 1s ease-out 0.5s;
 	animation-fill-mode: both;
 }
@@ -187,7 +187,6 @@ body {
 	transition: background-color 0.3s ease;
 	animation: fadeInLeft 1s ease-out 1s;
 	animation-fill-mode: both;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #banner-btn:hover {
