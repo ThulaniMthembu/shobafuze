@@ -454,23 +454,6 @@ body {
 	animation: zoom 1s;
 }
 
-@media screen and (max-width: 780px) {
-	.lightbox-content {
-		margin: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 90%;
-		max-width: 700px;
-		position: relative;
-		top: 20%;
-	}
-
-	.lone-h2 {
-		font-size: 30px;
-	}
-}
-
 @keyframes zoom {
 	from {
 		transform: scale(0);
@@ -776,11 +759,37 @@ footer {
 	}
 
 	#banner {
-		padding: 80px 40px;
+		position: relative;
+		padding: 100px 50px;
+		background-color: #f8f8f8;
+		overflow: hidden;
+	}
+
+	#banner::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(/images/background.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		filter: grayscale(90%) brightness(60%) blur(4px);
+		z-index: 1;
 	}
 
 	#banner-content {
-		padding-top: 60px;
+		position: relative;
+		z-index: 2;
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 20px;
 	}
 
 	#text-container h1 {
@@ -843,6 +852,21 @@ footer {
 		text-decoration: underline;
 		color: var(--main-color);
 		margin-bottom: 5px;
+	}
+
+	.lightbox-content {
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		max-width: 700px;
+		position: relative;
+		top: 20%;
+	}
+
+	.lone-h2 {
+		font-size: 30px;
 	}
 
 	.modal-body p {
@@ -980,10 +1004,6 @@ footer {
   Tablet responsiveness
 */
 @media screen and (min-width: 781px) and (max-width: 1024px) {
-	#nav-container {
-		padding: 10px 50px 0 20px;
-	}
-
 	#nav-container img {
 		width: 70px;
 	}
@@ -1001,9 +1021,36 @@ footer {
 	}
 
 	#banner {
-		margin: 150px 30px 0 30px;
+		position: relative;
+		padding: 100px 50px;
+		background-color: #f8f8f8;
+		overflow: hidden;
+	}
+
+	#banner::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(/images/background.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		filter: grayscale(90%) brightness(60%) blur(4px);
+		z-index: 1;
+	}
+
+	#banner-content {
+		position: relative;
+		z-index: 2;
+		max-width: 1200px;
+		margin: 0 auto;
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 20px;
 	}
 
 	#text-container h1 {
