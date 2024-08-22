@@ -17,7 +17,7 @@ html {
 	--tan-color: rgb(230, 197, 112);
 	--softerGreen-color: #6d9773;
 	--hoverTan-color: #bb8a52;
-	--yellow-color: #ffba00;
+	--yellow-color: #ffbb00;
 }
 
 body {
@@ -117,12 +117,30 @@ body {
 }
 
 #banner {
+	position: relative;
 	padding: 100px 50px;
 	background-color: #f8f8f8;
 	overflow: hidden;
 }
 
+#banner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(/images/background.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	filter: grayscale(80%) blur(10px);
+	z-index: 1;
+}
+
 #banner-content {
+	position: relative;
+	z-index: 2;
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
@@ -141,15 +159,22 @@ body {
 	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 20px;
-	color: var(--main-color);
+	color: var(--yellow-color);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	animation: fadeInLeft 1s ease-out;
 }
 
-#text-container p {
-	font-size: 1.2rem;
+#text-container h3 {
+	font-size: 2rem;
+	font-weight: 500;
 	line-height: 1.6;
 	margin-bottom: 30px;
 	color: var(--secondary-color);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(180deg, var(--secondary-color), #008080);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	animation: fadeInLeft 1s ease-out 0.5s;
 	animation-fill-mode: both;
 }
@@ -162,6 +187,7 @@ body {
 	transition: background-color 0.3s ease;
 	animation: fadeInLeft 1s ease-out 1s;
 	animation-fill-mode: both;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #banner-btn:hover {
@@ -191,7 +217,7 @@ body {
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+
 	animation: fadeInRight 1s ease-out;
 }
 
@@ -651,9 +677,7 @@ footer {
 	color: #929292;
 }
 
-/*
-  Mobile responsiveness
-*/
+/* Mobile responsiveness */
 @media screen and (max-width: 780px) {
 	.section {
 		padding: 50px 0;
@@ -764,7 +788,7 @@ footer {
 		font-size: 2.188rem;
 	}
 
-	#text-container p {
+	#text-container h3 {
 		font-size: 1.25rem;
 		margin-bottom: 5px;
 	}
