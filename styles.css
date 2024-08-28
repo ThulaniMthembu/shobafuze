@@ -78,15 +78,12 @@ body {
 	text-decoration: none;
 	padding: 5px;
 	font-weight: 500;
-	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #links-container a:hover {
 	background-color: var(--main-color);
 	color: var(--text-color);
 	border-radius: 5px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-	transform: translateY(-2px);
 }
 
 .buttons {
