@@ -715,7 +715,7 @@ footer {
 		display: block;
 		margin-top: 12px;
 		height: 100vh;
-		animation: slideIn 1s ease-in-out;
+		animation: slideIn 0.5s ease-in-out;
 	}
 
 	#links-container.show a {
@@ -725,7 +725,7 @@ footer {
 	#links-container.hide {
 		margin-top: 12px;
 		height: 100vh;
-		animation: slideOut 1s ease-out;
+		animation: slideOut 0.5s ease-out;
 	}
 
 	@keyframes slideIn {
