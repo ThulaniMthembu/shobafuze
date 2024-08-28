@@ -24,6 +24,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.no-scroll {
+	overflow: hidden;
+}
+
 .section {
 	padding: 0 30px;
 }
@@ -709,14 +713,16 @@ footer {
 
 	#links-container.show {
 		display: block;
-		max-height: 300px;
 		margin-top: 12px;
 		height: 100vh;
 		animation: slideIn 1s ease-in-out;
 	}
 
+	#links-container.show a {
+		font-size: 1.25rem;
+	}
+
 	#links-container.hide {
-		max-height: 300px;
 		margin-top: 12px;
 		height: 100vh;
 		animation: slideOut 1s ease-out;

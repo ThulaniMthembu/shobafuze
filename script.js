@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Function to toggle menu
 	function toggleMenu() {
 		hamburger.classList.toggle('active');
+		document.body.classList.toggle('no-scroll');
 
 		if (linksContainer.classList.contains('show')) {
 			linksContainer.classList.remove('show');
